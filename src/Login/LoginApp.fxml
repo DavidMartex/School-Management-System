@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.LoginController">
+   <children>
+      <Label layoutX="92.0" layoutY="14.0" prefHeight="17.0" prefWidth="60.0" text="DB Status :" />
+      <Label fx:id="dbstatus" layoutX="161.0" layoutY="14.0" prefHeight="17.0" prefWidth="165.0" />
+      <JFXTextField fx:id="username" alignment="CENTER" layoutX="93.0" layoutY="57.0" prefHeight="25.0" prefWidth="165.0" promptText="Username" />
+      <JFXPasswordField fx:id="password" alignment="CENTER" layoutX="108.0" layoutY="130.0" promptText="Password" />
+      <JFXButton fx:id="login" alignment="CENTER" buttonType="RAISED" layoutX="134.0" layoutY="265.0" onAction="#login" prefHeight="25.0" prefWidth="82.0" ripplerFill="#4acf83" style="-fx-background-color: #4a8bce;" text="Login" textAlignment="CENTER" />
+      <Label fx:id="loginstatus" layoutX="93.0" layoutY="198.0" prefHeight="17.0" prefWidth="165.0" textFill="#ee4b4b" />
+   </children>
+   <padding>
+      <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+   </padding>
+</AnchorPane>
